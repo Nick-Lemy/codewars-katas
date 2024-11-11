@@ -5,11 +5,11 @@ const select = (population, fitnesses) => {
     let p = Math.random();
     let starting_point = 0;
     console.log(p);
-    for(let i = 0; i < population.length; i++){
-        if( p <= fitnesses[i] && p >= starting_point ){
+    for (let i = 0; i < population.length; i++) {
+        if (p <= fitnesses[i] && p >= starting_point) {
             return population[i];
         } else {
             starting_point += fitnesses[i];
         }
     }
-  }
+}
