@@ -2,12 +2,11 @@
 // Have a fun! :D
 
 var uniqueInOrder=function(iterable){
-  let my_list = iterable.split('');
-  let result = [my_list[0]];
-  for(let i = 0; i < my_list.length; i++){
-    if(result[result.length - 1] !== my_list[i]){
-      result.push(my_list[i]);
+  let result = [iterable[0]];
+  for(let i = 0; i < iterable.length; i++){
+    if(result[result.length - 1] !== iterable[i]){
+      result.push(iterable[i]);
     }
   }
-  return result;
+  return iterable.length == 0 ? [] : result ;
 }
