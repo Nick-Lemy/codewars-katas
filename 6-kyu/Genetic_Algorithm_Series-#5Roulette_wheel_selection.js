@@ -1,5 +1,5 @@
 // Here is the kata's link https://www.codewars.com/kata/567b21565ffbdb30e3000010/javascript
-// Have a good time :D
+// Have fun :D !
 
 const select = (population, fitnesses) => {
     let p = Math.random();

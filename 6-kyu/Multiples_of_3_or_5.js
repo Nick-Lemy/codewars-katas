@@ -1,5 +1,5 @@
 // Here is the kata's link https://www.codewars.com/kata/514b92a657cdc65150000006/javascript
-// Have a good time :D
+// Have fun :D !
 
 function solution(number){
     var result = 0;

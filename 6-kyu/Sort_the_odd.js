@@ -1,3 +1,6 @@
+// Here is the kata's link https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/javascript
+// Have fun :D !
+
 function sortArray(array) {
     let odd = [];
     let indexes = [];
