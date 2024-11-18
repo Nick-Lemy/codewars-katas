@@ -22,6 +22,8 @@ console.log(uniqueInOrder("AAAABBBCCDAABBB"));
 console.log(['A', 'B', 'C', 'D', 'A', 'B'])
 
 
+console.log(9 > 5 > 2) // false
+
 // var uniqueInOrder = function (iterable) {
 //   var result = iterable.split('');
 //   for (var i = 0; i < result.length; i++) {
