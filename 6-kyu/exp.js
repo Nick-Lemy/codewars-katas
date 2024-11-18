@@ -8,18 +8,18 @@ for (const name of names) {
 //but still you couldn't use the index of the element :sad:
 
 
-var uniqueInOrder=function(iterable){
+var uniqueInOrder = function (iterable) {
   let my_list = iterable.split('');
   let result = [my_list[0]];
-  for(let i = 0; i < my_list.length; i++){
-    if(result[result.length - 1] !== my_list[i]){
+  for (let i = 0; i < my_list.length; i++) {
+    if (result[result.length - 1] !== my_list[i]) {
       result.push(my_list[i]);
     }
   }
   return result;
 }
 console.log(uniqueInOrder("AAAABBBCCDAABBB"));
-console.log(['A','B','C','D','A','B'])
+console.log(['A', 'B', 'C', 'D', 'A', 'B'])
 
 
 // var uniqueInOrder = function (iterable) {
