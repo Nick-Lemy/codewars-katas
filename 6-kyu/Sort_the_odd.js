@@ -11,7 +11,7 @@ function sortArray(array) {
         }
     }
     for (let j = 0; j < odd.length; j++) {
-        
+
         array.splice(indexes[j], 1, odd.sort()[j]);
     }
     return array;
