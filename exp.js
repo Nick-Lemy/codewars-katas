@@ -57,3 +57,9 @@ console.log(9 > 5 > 2) // false
 //   }
 // }
 // console.log(nick.sort());
+
+var isSquare = function(n){
+  return n >= 0 ? (Math.round(n^0.5) === n^0.5 ? true : false) : false;
+}
+
+console.log(isSquare(0));
