@@ -10,3 +10,7 @@ Links to an external site.-  Links to an external site.Links to an external site
 
 - www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 */
+
+
+document.querySelector('#btn-container').addEventListener('click', ()=>{}, {capture : true})
+document.querySelector('#btn').addEventListener('click', ()=>{})

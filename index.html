@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        padding: 10px;
+        border: 2px solid black;
+    }
+    body{
+        height: 1000px;
+    }
+</style>
+<body>
+    <div id="box">
+        <button id="btn">click me</button>
+    </div>
+</body>
+<script>
+    document.getElementById('box').addEventListener('click', ()=> {
+        document.getElementById('box').style.backgroundColor = 'red'
+    })
+
+    document.getElementById('btn').addEventListener('click', event => {
+
+        docuent.getElementById('btn').style.backgroundColor = 'pink'
+    })
+
+    document.getElementById('btn').addEventListener('click', event => {
+
+docuent.body.style.backgroundColor = 'red'
+})
+</script>
+</html>
