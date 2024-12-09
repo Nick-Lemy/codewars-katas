@@ -12,5 +12,9 @@ Links to an external site.-  Links to an external site.Links to an external site
 */
 
 
-document.querySelector('#btn-container').addEventListener('click', ()=>{}, {capture : true})
-document.querySelector('#btn').addEventListener('click', ()=>{})
+// document.querySelector('#btn-container').addEventListener('click', ()=>{}, {capture : true})
+// document.querySelector('#btn').addEventListener('click', ()=>{})
+// const liste = ['.', ',', ';', ':', '/']
+// const paragraph = document.querySelector('#myParagraph').textContent
+// const words = paragraph.split('').filter(n=> !liste.includes(n)).join('').split(' ')
+// console.log(words);
