@@ -11,10 +11,38 @@ Links to an external site.-  Links to an external site.Links to an external site
 - www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 */
 
-
 // document.querySelector('#btn-container').addEventListener('click', ()=>{}, {capture : true})
 // document.querySelector('#btn').addEventListener('click', ()=>{})
 // const liste = ['.', ',', ';', ':', '/']
 // const paragraph = document.querySelector('#myParagraph').textContent
 // const words = paragraph.split('').filter(n=> !liste.includes(n)).join('').split(' ')
 // console.log(words);
+// function findMultiples(integer, limit) {
+//your code here
+//   let result = [];
+//   for (let i = integer; i <= limit; i++) {
+//     if (i % integer === 0) {
+//       result.push(i);
+//     }
+//   }
+//   return result;
+function secondSymbol(s, symbol) {
+  return s
+    .split("")
+    .map((n, i) => (n === symbol ? i : n))
+    .filter((n) => Number(n) === n)[1];
+}
+
+// console.log(secondSymbol("Hello world!!!", "l"));
+let num = "hello";
+console.log(num.toString(2));
+// console.log(Number(10, 2));
+
+// let num = 5;
+// parseInt(5, 2);
+// Number(5, 2);
+let arr = [1, 2, 10];
+let sumOfDifferences = (arr) => {
+  arr.sort((a, b) => b - a)[0] - arr.sort((a, b) => b - a)[arr.length];
+};
+console.log(sumOfDifferences(arr));
