@@ -34,15 +34,53 @@ function secondSymbol(s, symbol) {
 }
 
 // console.log(secondSymbol("Hello world!!!", "l"));
-let num = "hello";
-console.log(num.toString(2));
+// let num = "hello";
+// console.log(num.toString(2));
 // console.log(Number(10, 2));
 
 // let num = 5;
 // parseInt(5, 2);
 // Number(5, 2);
-let arr = [1, 2, 10];
-let sumOfDifferences = (arr) => {
-  arr.sort((a, b) => b - a)[0] - arr.sort((a, b) => b - a)[arr.length];
-};
-console.log(sumOfDifferences(arr));
+// let arr = [1, 2, 10];
+// let sumOfDifferences = (arr) => {
+//   arr.sort((a, b) => b - a)[0] - arr.sort((a, b) => b - a)[arr.length];
+// };
+// console.log(sumOfDifferences(arr));
+
+// function XO(str) {
+//   //code here
+//   console.log(
+//     str.split("").filter((n) => n === "x"),
+//     str.split("").filter((n) => n === "o")
+//   );
+
+//   return (
+//     str.split("").filter((n) => n.toLowerCase() === "x").length ===
+//     str.split("").filter((n) => n.toLowerCase() === "o").length
+//   );
+// }
+
+// console.log(XO("ooxx"));
+// let XO = (str) =>
+//   str.split("").filter((n) => n.toLowerCase() === "x").length ===
+//   str.split("").filter((n) => n.toLowerCase() === "o").length;
+
+function minimumNumber(numbers) {
+  let sum = numbers.reduce((acc, num) => acc + num);
+  while (!checkIfPrime(sum)) {
+    sum++;
+  }
+  return sum;
+}
+
+function checkIfPrime(n) {
+  for (let i = 2; i < (n ^ 0.5); i++) {
+    if (n % i === 0) {
+      console.log(i);
+
+      return false;
+    }
+  }
+  return true;
+}
+console.log(minimumNumber([1, 9]));
