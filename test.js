@@ -65,22 +65,61 @@ function secondSymbol(s, symbol) {
 //   str.split("").filter((n) => n.toLowerCase() === "x").length ===
 //   str.split("").filter((n) => n.toLowerCase() === "o").length;
 
-function minimumNumber(numbers) {
-  let sum = numbers.reduce((acc, num) => acc + num);
-  while (!checkIfPrime(sum)) {
-    sum++;
-  }
-  return sum;
+// function minimumNumber(numbers) {
+//   let sum = numbers.reduce((acc, num) => acc + num);
+//   while (!checkIfPrime(sum)) {
+//     sum++;
+//   }
+//   return sum;
+// }
+
+// function checkIfPrime(n) {
+//   for (let i = 2; i < (n ^ 0.5); i++) {
+//     if (n % i === 0) {
+//       console.log(i);
+
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(minimumNumber([1, 9]));
+
+// function generateHashtag(str) {
+//   let r = str.split("").every((n) => n === "" || n === " " || n === ".")
+//     ? false
+//     : str.split(" ").map(function (n) {
+//         if (n) {
+//           let result = n.split("");
+//           result[0] = result[0].toUpperCase();
+//           return result.join("");
+//         } else {
+//           return n;
+//         }
+//       });
+//   return r === false || str.length >= 140
+//     ? false
+//     : str.split(" ").length === 1
+//     ? "#" +
+//       str.slice(0, str.length / 2) +
+//       str[str.length / 2].toUpperCase() +
+//       str.slice(str.length / 2 + 1)
+//     : "#" + r.join("");
+// }
+
+function generateHashtag(str) {
+  let r = str.split("").every((n) => n === "" || n === " " || n === ".")
+    ? false
+    : str.split(" ").map(function (n) {
+        if (n) {
+          let result = n.split("");
+          result[0] = result[0].toUpperCase();
+          return result.join("");
+        } else {
+          return n;
+        }
+      });
+  return r === false || str.length >= 140 ? false : "#" + r.join("");
 }
 
-function checkIfPrime(n) {
-  for (let i = 2; i < (n ^ 0.5); i++) {
-    if (n % i === 0) {
-      console.log(i);
-
-      return false;
-    }
-  }
-  return true;
-}
-console.log(minimumNumber([1, 9]));
+console.log(generateHashtag("Codewars"));
